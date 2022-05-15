@@ -58,10 +58,7 @@ class Gameplay:
                 for obj in tile.objects:
                     for rule in self.rules:
                         if obj.name == rule.first:
-                            obj.property = rule.second 
-
-    def interact(self):
-        pass
+                            obj.property = rule.second
 
     # find a block upward (continuous)
     # return block size if the block can be moved up
