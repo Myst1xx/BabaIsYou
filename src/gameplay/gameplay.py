@@ -56,6 +56,8 @@ class Gameplay:
             for c in range(self.n_cols):
                 tile = self.tiles[r,c]
                 for obj in tile.objects:
+                    if obj.name != 'word':
+                        obj.property = ''
                     for rule in self.rules:
                         if obj.name == rule.first:
                             obj.property = rule.second
@@ -106,12 +108,12 @@ class Gameplay:
         current_col = c + 1
         count = 1
 
-        if current_col >= self.n_rows:
+        if current_col >= self.n_cols:
             return -1
-        while current_col < self.n_rows and self.tiles[r,current_col].have_property('push'):
+        while current_col < self.n_cols and self.tiles[r,current_col].have_property('push'):
             count += 1
             current_col += 1
-        if current_col >= self.n_rows or self.tiles[r,current_col].have_property('stop') or self.tiles[r,current_col].have_property('you'):
+        if current_col >= self.n_cols or self.tiles[r,current_col].have_property('stop') or self.tiles[r,current_col].have_property('you'):
             return -1
         else:
             return count  
