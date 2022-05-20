@@ -1,11 +1,9 @@
 import sys
-
-sys.path.append("C:/Users/leudanghuy/Documents/Python_Learning/Project/BabaIsYou/BabaIsYou/src")
-
 import pygame
 import os
-
 current_dir = os.path.dirname(__file__)
+
+sys.path.append(os.path.join(current_dir,"."))
 
 from graphics import GameplayGraphic
 
@@ -22,7 +20,7 @@ class MainWindow:
         # create a surface on screen that has the size of window
         self.screen = pygame.display.set_mode((self.window_width, self.window_height))
 
-        self.background_music = pygame.mixer.music.load('C:/Users/leudanghuy/Documents/Python_Learning/Project/BabaIsYou/BabaIsYou/resources/graphics/Music.mp3')
+        self.background_music = pygame.mixer.music.load(os.path.join(current_dir,'../resources/graphics/Music.mp3'))
         pygame.mixer.music.set_volume(0.1)
         pygame.mixer.music.play()
 

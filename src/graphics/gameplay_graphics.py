@@ -1,13 +1,12 @@
 import sys
-
-sys.path.append("C:/Users/leudanghuy/Documents/Python_Learning/Project/BabaIsYou/BabaIsYou/src")
-
 import pygame
 import os
 import numpy as np
 import pandas as pd
 
 current_dir = os.path.dirname(__file__)
+
+sys.path.append(os.path.join(current_dir,".."))
 
 from gameplay import Gameplay, Tile
 from graphics.object_graphics import BabaGraphic, RockGraphic, WaterGraphic, SkullGraphic, WallGraphic, FlagGraphic, WordGraphic
