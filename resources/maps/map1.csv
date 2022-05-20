@@ -1,0 +1,15 @@
+wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall
+wall,ROCK,,,water,,wall,,water,,,,,,wall,WALL,IS,STOP,wall
+wall,IS,,,rock,,wall,,rock,,,,,,wall,FLAG,IS,WIN,wall
+wall,PUSH,BABA,IS,YOU,,wall,,wall,,,,,,wall,WATER,IS,SINK,wall
+wall,,,wall,,,wall,,wall,,,,,,wall,wall,wall,wall,wall
+wall,,,wall,,,wall,,wall,,,,,,,,,,wall
+wall,,,wall,,water,wall,,wall,,baba,,,,,,,,wall
+wall,,,rock,,,wall,,wall,,,,,,,,,,wall
+wall,,,wall,water,,wall,,wall,,,,,,,,,,wall
+wall,,,wall,,,wall,,wall,,,,,,,,,,wall
+wall,,,wall,,water,wall,,wall,,,,,rock,,,,,wall
+wall,flag,,rock,,,rock,,wall,,,,,,,,,,wall
+wall,,,wall,water,,rock,,wall,,,,,,,,,,wall
+wall,,,wall,,,water,,wall,,,,,,,,,,wall
+wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall
